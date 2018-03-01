@@ -70,6 +70,11 @@
     //音频
 }
 
+-(void)dealloc{
+    
+    NSLog(@"内存释放");
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

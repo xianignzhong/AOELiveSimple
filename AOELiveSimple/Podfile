@@ -1,0 +1,9 @@
+inhibit_all_warnings!
+
+platform :ios, '8.0'
+target 'AOELiveSimple' do
+
+pod 'GPUImage'
+pod 'Masonry'
+
+end

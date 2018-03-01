@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78AD335ABF3D930FE8992C50 /* libPods-AOELiveSimple.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97A9AB4BC9A9A3363A6707 /* libPods-AOELiveSimple.a */; };
+		B21C25852047979700736209 /* GPUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C25842047979700736209 /* GPUViewController.m */; };
+		B21C25882047BB3A00736209 /* FSKGPUImageBeautyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C25862047BB3A00736209 /* FSKGPUImageBeautyFilter.m */; };
 		B29738A920453EE20087A0A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B29738A820453EE20087A0A9 /* AppDelegate.m */; };
 		B29738AC20453EE20087A0A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29738AB20453EE20087A0A9 /* ViewController.m */; };
 		B29738AF20453EE20087A0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29738AD20453EE20087A0A9 /* Main.storyboard */; };
@@ -37,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08216364796AB49FF3002FBF /* Pods-AOELiveSimple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOELiveSimple.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AOELiveSimple/Pods-AOELiveSimple.debug.xcconfig"; sourceTree = "<group>"; };
+		B21C25832047979700736209 /* GPUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUViewController.h; sourceTree = "<group>"; };
+		B21C25842047979700736209 /* GPUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUViewController.m; sourceTree = "<group>"; };
+		B21C25862047BB3A00736209 /* FSKGPUImageBeautyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSKGPUImageBeautyFilter.m; sourceTree = "<group>"; };
+		B21C25872047BB3A00736209 /* FSKGPUImageBeautyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKGPUImageBeautyFilter.h; sourceTree = "<group>"; };
 		B29738A420453EE20087A0A9 /* AOELiveSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOELiveSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29738A720453EE20087A0A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B29738A820453EE20087A0A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +66,8 @@
 		B29738DD204545FE0087A0A9 /* AOELiveTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOELiveTool.h; sourceTree = "<group>"; };
 		B29738DE204545FE0087A0A9 /* AOELiveTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOELiveTool.m; sourceTree = "<group>"; };
 		B29738E02045462C0087A0A9 /* AOELiveKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOELiveKit.h; sourceTree = "<group>"; };
+		BF97A9AB4BC9A9A3363A6707 /* libPods-AOELiveSimple.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AOELiveSimple.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB02E1587EA144F845EB1927 /* Pods-AOELiveSimple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOELiveSimple.release.xcconfig"; path = "Pods/Target Support Files/Pods-AOELiveSimple/Pods-AOELiveSimple.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78AD335ABF3D930FE8992C50 /* libPods-AOELiveSimple.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +103,8 @@
 				B29738BF20453EE20087A0A9 /* AOELiveSimpleTests */,
 				B29738CA20453EE20087A0A9 /* AOELiveSimpleUITests */,
 				B29738A520453EE20087A0A9 /* Products */,
+				EAECF31215ABB795F5C8FD7D /* Pods */,
+				F2D70692D1637F6D9B5ADC42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +126,8 @@
 				B29738A820453EE20087A0A9 /* AppDelegate.m */,
 				B29738AA20453EE20087A0A9 /* ViewController.h */,
 				B29738AB20453EE20087A0A9 /* ViewController.m */,
+				B21C25832047979700736209 /* GPUViewController.h */,
+				B21C25842047979700736209 /* GPUViewController.m */,
 				B29738AD20453EE20087A0A9 /* Main.storyboard */,
 				B29738B020453EE20087A0A9 /* Assets.xcassets */,
 				B29738B220453EE20087A0A9 /* LaunchScreen.storyboard */,
@@ -148,8 +163,27 @@
 				B29738DE204545FE0087A0A9 /* AOELiveTool.m */,
 				B29738DA204544280087A0A9 /* AOELiveCaptureSession.h */,
 				B29738DB204544280087A0A9 /* AOELiveCaptureSession.m */,
+				B21C25872047BB3A00736209 /* FSKGPUImageBeautyFilter.h */,
+				B21C25862047BB3A00736209 /* FSKGPUImageBeautyFilter.m */,
 			);
 			path = AOELiveKit;
+			sourceTree = "<group>";
+		};
+		EAECF31215ABB795F5C8FD7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08216364796AB49FF3002FBF /* Pods-AOELiveSimple.debug.xcconfig */,
+				EB02E1587EA144F845EB1927 /* Pods-AOELiveSimple.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2D70692D1637F6D9B5ADC42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF97A9AB4BC9A9A3363A6707 /* libPods-AOELiveSimple.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B29738D020453EE20087A0A9 /* Build configuration list for PBXNativeTarget "AOELiveSimple" */;
 			buildPhases = (
+				BDCC5B2F5EAE057DB2842D38 /* [CP] Check Pods Manifest.lock */,
 				B29738A020453EE20087A0A9 /* Sources */,
 				B29738A120453EE20087A0A9 /* Frameworks */,
 				B29738A220453EE20087A0A9 /* Resources */,
+				56DA9FBEED9985B709DB14BA /* [CP] Embed Pods Frameworks */,
+				B18FE50A2B98018AEF74148F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,16 +317,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56DA9FBEED9985B709DB14BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AOELiveSimple/Pods-AOELiveSimple-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B18FE50A2B98018AEF74148F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AOELiveSimple/Pods-AOELiveSimple-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AOELiveSimple/Pods-AOELiveSimple-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDCC5B2F5EAE057DB2842D38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AOELiveSimple-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B29738A020453EE20087A0A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21C25882047BB3A00736209 /* FSKGPUImageBeautyFilter.m in Sources */,
 				B29738AC20453EE20087A0A9 /* ViewController.m in Sources */,
 				B29738B720453EE20087A0A9 /* main.m in Sources */,
 				B29738A920453EE20087A0A9 /* AppDelegate.m in Sources */,
 				B29738DF204545FE0087A0A9 /* AOELiveTool.m in Sources */,
 				B29738DC204544280087A0A9 /* AOELiveCaptureSession.m in Sources */,
+				B21C25852047979700736209 /* GPUViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +547,7 @@
 		};
 		B29738D120453EE20087A0A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08216364796AB49FF3002FBF /* Pods-AOELiveSimple.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +562,7 @@
 		};
 		B29738D220453EE20087A0A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB02E1587EA144F845EB1927 /* Pods-AOELiveSimple.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

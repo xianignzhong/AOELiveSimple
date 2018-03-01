@@ -337,7 +337,6 @@
 #endif
 }
 
-
 #pragma mark - <AVCaptureVideoDataOutputSampleBufferDelegate>
 //实现视频输出对象和音频输出对象的代理方法, 在该方法中获取音视频采集的数据, 或者叫做帧数据
 -(void)captureOutput:(AVCaptureOutput *)output didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection{
