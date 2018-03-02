@@ -58,11 +58,14 @@
     CIImage *ciImage = [CIImage imageWithCVImageBuffer:imageBuffer];
     // 转换UIImage
     UIImage *image = [UIImage imageWithCIImage:ciImage];
+    
+    
+    
     // 回到主线程更新UI
     dispatch_sync(dispatch_get_main_queue(), ^{
         
         self.imageView.image = image;
-    });
+    }); 
 }
 
 -(void)audioCaptureOutputWithSampleBuffer:(CMSampleBufferRef)sampleBuffer{
