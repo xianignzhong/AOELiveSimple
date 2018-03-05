@@ -1,6 +1,28 @@
 # AOELiveSimple
 
 —GPUImage 相关
+// Base classes
+#import "GPUImageOpenGLESContext.h"
+#import "GPUImageOutput.h"
+#import "GPUImageView.h"
+#import "GPUImageVideoCamera.h"
+#import "GPUImageStillCamera.h"
+#import "GPUImageMovie.h"
+#import "GPUImagePicture.h"
+#import "GPUImageRawDataInput.h"
+#import "GPUImageRawDataOutput.h"
+#import "GPUImageMovieWriter.h"
+#import "GPUImageFilterPipeline.h"
+#import "GPUImageTextureOutput.h"
+#import "GPUImageFilterGroup.h"
+#import "GPUImageTextureInput.h"
+#import "GPUImageUIElement.h"
+#import "GPUImageBuffer.h"
+
+// Filters
+#import "GPUImageFilter.h"
+#import "GPUImageTwoInputFilter.h"
+
 #pragma mark - 调整颜色 Handle Color
 
 #import "GPUImageBrightnessFilter.h"                //亮度
@@ -138,6 +160,9 @@
 #import "GPUImageAddBlendFilter.h"                  //通常用于创建两个图像之间的动画变亮模糊效果
 #import "GPUImageDivideBlendFilter.h"               //通常用于创建两个图像之间的动画变暗模糊效果
 
+#import "GPUImageJFAVoroniFilter.h"
+#import "GPUImageVoroniConsumerFilter.h"
+
 —2018/2/28
 1、添加AOELiveTool 类  视频、音频权限的开启检测
 2、添加AOELiveCaptureSession 类 采集视频、音频等操作 设置高中低三档清晰度 前后摄像头切换
@@ -145,3 +170,8 @@
 —2018/3/1
 1、添加GPUImage 采集数据、滤镜
 2、添加FSKGPUImageBeautyFilter 美颜滤镜
+
+—2018/3/5
+1、通过GPUImage混合模式 添加美颜滤镜、水印 (混合模式可以根据需求选择)
+2、如果需要给本地视频等添加水印等可以使用GPUImageMovieWriter 类来操作
+

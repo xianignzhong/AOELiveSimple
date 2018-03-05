@@ -28,6 +28,10 @@
 
 @property (nonatomic, strong) FSKGPUImageBeautyFilter * beauty;//美颜
 
+//图片水印
+@property (nonatomic, strong) GPUImageUIElement *uiElement;
+
+
 @end
 
 @implementation GPUViewController
@@ -43,6 +47,7 @@
     [self aoe_setupLayouts];
     
     [self.videoCamera startCameraCapture];
+    
 }
 
 -(void)aoe_setupViews{
@@ -55,6 +60,7 @@
     /**无滤镜
     [self.videoCamera addTarget:self.baseFilter];
     [self.baseFilter addTarget:self.filterView];
+     
     */
     
     /** 单个滤镜
@@ -87,14 +93,34 @@
     [self.group addTarget:self.filterView];
     */
     
-    //美颜这里用FSKGPUImageBeautyFilter 都是基于GPUImageFilter
+    /**美颜这里用FSKGPUImageBeautyFilter 都是基于GPUImageFilter
     [self.videoCamera addTarget:self.beauty];
-    
     self.beauty.beautyLevel = 0.5;
     self.beauty.toneLevel = 0.8;
     self.beauty.brightLevel = 0.4;
     
     [self.beauty addTarget:self.filterView];
+     */
+    
+    ///**美颜水印
+//    GPUImageDissolveBlendFilter *filter = [[GPUImageDissolveBlendFilter alloc] init];
+    GPUImageNormalBlendFilter *filter = [[GPUImageNormalBlendFilter alloc] init]; //正常混合模式
+    
+    FSKGPUImageBeautyFilter *beauty = [[FSKGPUImageBeautyFilter alloc] init];
+    [self.videoCamera addTarget:beauty];
+    [beauty addTarget:filter];
+    [self.uiElement addTarget:filter];
+    
+    [filter addTarget:self.filterView];
+
+    __unsafe_unretained GPUImageUIElement *weakOverlay = self.uiElement;
+
+    [beauty setFrameProcessingCompletionBlock:^(GPUImageOutput *output, CMTime time) {
+
+        [weakOverlay update];
+    }];
+    //*/
+    
 }
 
 #pragma mark 将滤镜加在FilterGroup中并且设置初始滤镜和末尾滤镜
@@ -138,6 +164,11 @@
 - (IBAction)change:(UIButton *)sender {
     
     [self.videoCamera rotateCamera];
+}
+
+- (void)dealloc{
+    
+    NSLog(@"GPUViewController 内存释放");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -247,5 +278,21 @@
     return _beauty;
 }
 
+-(GPUImageUIElement *)uiElement{
+    
+    if (!_uiElement) {
+        
+        UIView *contentView = [[UIView alloc] initWithFrame:self.view.bounds];
+        contentView.backgroundColor = [UIColor clearColor];
+        
+        UIImageView *ivTemp = [[UIImageView alloc] initWithFrame:CGRectMake(20, 30, 100, 100)];
+        ivTemp.image = [UIImage imageNamed:@"logo"];
+        [contentView addSubview:ivTemp];
+        
+        _uiElement = [[GPUImageUIElement alloc]initWithView:contentView];
+    }
+    
+    return _uiElement;
+}
 
 @end
